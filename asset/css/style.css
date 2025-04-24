@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgba(242, 245, 250, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background: white;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.modal-footer .header-navbar-button{
+    width: 185px;
+}
+
+/* navbar-nav menu */
+.navbar{
+    height: 68px;
+    background: rgba(255, 255, 255, 1);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: rgba(227, 52, 73, 1);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.colors{
+    font-size: 15px;
+    font-family: 'Inter', serif;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.header-navbar-button,
+.header-button{
+    font-size: 15px;
+    font-family: 'Inter', serif;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    width: 164px;
+    height: 36px;
+    background: rgba(255, 78, 72, 1);
+    border-radius: 12px;
+    border: rgba(255, 78, 72, 1);
+}
+
+/* Hader */
+.header-container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.united{
+    width: 894px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.header-text{
+    height: 218px;
+}
+
+.header-title{
+    font-size: 40px;
+    font-family: 'Inter', serif;
+    line-height: 140%;
+}
+
+.header-text .header-description{
+    font-size: 17px;
+    font-family: 'Inter', serif;
+    line-height: 22px;
+}
+
+.header-button{
+    width: 176px;
+    height: 44px;
+    border-radius: 16px;
+    background: rgba(26, 33, 51, 1);
+    border: rgba(26, 33, 51, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-row {
+    width: 75%;
+}
+
+.header-crop-image{
+    height: 330px;
+}
+
+.header-logo-image{
+    height: 330px;
+}
+
+/* About */
+.about{
+    margin-bottom: 100px;
+}
+
+.about-me{
+    width: 100%;
+    height: 164px;
+    border-radius: 32px;
+    background: rgba(227, 232, 240, 1);
+    padding: 32px;
+}
+
+.about-text{
+    width: 400px;
+}
+
+.about-leder .about-text{
+    width: 424px;
+}
+
+.about-title{
+    font-size: 23px;
+    font-family: 'Inter', serif;
+    line-height: 28px;
+}
+
+.about-description{
+    font-size: 15px;
+    font-family: 'Inter', serif;
+    line-height: 20px;
+}
+
+.about-image{
+    width: 100px;
+    height: 100px;
+}
+
+/* Risks */
+.risks{
+    margin-bottom: 100px;
+}
+
+.risks-about{
+    width: 100%;
+    height: 424px;
+    border-radius: 32px;
+    padding: 32px;
+    background: rgba(227, 232, 240, 1);
+}
+
+.risks-about .about-text,
+.companine-text .about-text{
+    width: auto;
+}
+
+/* Companie-about */
+.conpanie-about{
+    margin-bottom: 100px;
+}
+
+.conpanie-about .about-text{
+    width: 100%;
+    height: 176px;
+    border-radius: 32px;
+    padding: 32px;
+    background: rgba(227, 232, 240, 1);
+}
+
+.conpanie-about .about-text a button{
+    font-size: 15px;
+    font-family: 'Inter', serif;
+    line-height: 20px;
+    color: rgba(222, 56, 51, 1);
+}
+
+.companie-logo-image{
+    width: 80%;
+}
+
+/* employees */
+
+.employees .employees-blog{
+    height: auto;
+    border-radius: 32px;
+    padding: 32px;
+    background: rgba(227, 232, 240, 1);
+    margin-bottom: 100px;
+}
+
+.employees-img img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.header-logo-image .rotate{
+    transform: rotate(-8deg);
+}
+
+.header-logo-image .header-rotate{
+    transform: rotate(8deg);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .conpanie-about .about-text{
+        width: 100%;
+    }
+
+    .companie-logo-image{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .header-row {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .employees .employees-blog{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .united{
+        width: 768px;
+    }
+
+    .header-text {
+        height: 190px;
+    }
+        
+    .header-title{
+        font-size: 30px;
+    }
+
+    .conpanie-about .about-text{
+        height: 184px;
+    }
+}
+
+
+@media screen and (max-width: 784px) {
+    .united{
+        width: 100%;
+    }
+    .header-text {
+        height: 220px;
+    }
+
+    .header-title{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 270px;
+        height: 29vh;
+        background: rgba(227, 232, 240, 1);
+        border-radius: 10px;
+        padding-left: 24px;
+        padding-top: 24px;
+        transition: all .50s ease;
+    }
+
+    .navbar-nav.open{
+        left: 0;
+    }
+
+    .header-logo-image {
+        height: auto;
+    }
+
+    .header-logo-image img{
+        width: 166px;
+        transform: rotate(-8deg);
+    }
+
+    .header-logo-image .rotate{
+        transform: rotate(8deg);
+    }
+
+    .risks-row{
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .conpanie-about .about-text{
+        height: 176px;
+    }
+
+    /* .companie-img.swiper-slide{
+        width: fit-content !important;
+    } */
+
+    .header-logo-image .rotate{
+        transform: rotate( 0);
+    }
+    
+    .header-logo-image .header-rotate{
+        transform: rotate( 0);
+    }
+    
+
+    .about-row>* {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header-container{
+        margin-top: 30px;
+    }
+
+    .header-title{
+        font-size: 22px;
+    }
+    .header-text {
+        height: 180px;
+    }
+
+    .header-logo-image{
+        height: auto;
+    }
+
+    .about-me{
+        height: auto;
+    }
+
+    .about-me .about-text,
+    .about-leder .about-text{
+        width: auto;
+        height: auto;
+    }
+
+    .about-text .about-description{
+        line-height: inherit;
+    }
+
+    .about-text{
+        order: 2;
+    }
+
+    .about-image{
+        order: 1;
+    }
+    
+}
+
+@media screen and (max-width: 530px){
+    .header-text {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 428px){
+
+    .header-title{
+        font-size: 20px;
+    }
+
+    .header-text .header-description{
+        font-size: 16px;
+    }
+
+    .risks-about{
+        height: auto;
+    }
+
+    .about-title{
+        font-size: 20px;
+    }
+
+    .conpanie-about .about-text{
+        height: 184px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .conpanie-about .about-text{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .header-text {
+        height: 235px;
+    }
+    .header-title{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .companie-img.swiper-slide{
+        width: fit-content !important;
+    }
+
+}

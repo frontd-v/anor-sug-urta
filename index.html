@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANOR-RE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="SendmessageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-message">
+                <div class="modal-header background rounded-0">
+                    <button type="button" class="btn-close modal-colse" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body background">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="text" class="form-label colors">ФИО</label>
+                            <input type="text" class="form-control" id="text">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="text-number" class="form-label colors">Номер телефона</label>
+                            <input type="text" class="form-control" id="text-number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label colors">Адрес электронной
+                                почты</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label colors">Сообщение:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="g-recaptcha " data-sitekey="6Le3_DApAAAAACQ_8tdQv7dyQZZr-wMj6aTNZ4Vy"></div>
+                    </form>
+                </div>
+                <div class="modal-footer rounded-0 background">
+                    <button type="submit" class="header-navbar-button">Отправить сообщение</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg" id="myHeader">
+        <div class="container-lg container-fluid">
+            <div class="logo">
+                <a href="#">
+                    <img src="asset/image/anor-logo.svg" class="nav-logo" alt="">
+                </a>
+            </div>
+
+            <ul class="navbar-nav d-md-flex  align-items-start gap-3 ms-auto me-auto my-md-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item mx-md-3">
+                    <a class="colors position-relative fw-normal active" aria-current="page" href="#about">О нас</a>
+                </li>
+                <li class="nav-item mx-md-3">
+                    <a class="colors position-relative fw-normal" href="#risks">Риски</a>
+                </li>
+                <li class="nav-item mx-md-3">
+                    <a class="colors position-relative fw-normal" href="#conpanie-about">Компании</a>
+                </li>
+                <button class="header-navbar-button fw-medium d-md-none " data-bs-toggle="modal" data-bs-target="#SendmessageModal" data-bs-whatever="@fat">Связаться с нами</button>
+            </ul>
+
+            <button class="header-navbar-button fw-medium d-none d-md-block" data-bs-toggle="modal" data-bs-target="#SendmessageModal" data-bs-whatever="@fat">Связаться с нами</button>
+
+
+            <div class="main d-flex align-items-center">
+                <div class="bx bx-menu d-md-none" id="menu-icon"></div>
+            </div>
+        </div>
+
+    </nav>
+
+    <header>
+        <div class="container-lg container-fluid">
+            <div class="header-container d-flex flex-column align-items-center">
+                <div class="united">
+                    <div class="header-text d-flex flex-column justify-content-between align-items-center">
+                        <h1 class="header-title text-center fw-bold">Надежное страхование крупных рисков — объединённые
+                            силы 4 страховых компаний</h1>
+                        <p class="header-description text-center fw-normal">Совместное перестрахование, усиленная
+                            экспертиза и уверенность в завтрашнем дне</p>
+                        <button class="header-button fw-medium">Узнать больше</button>
+                    </div>
+                </div>
+
+                <div class="row header-row">
+                    <div class="col-sm-6 col-md-3 col-12 order-2 order-md-1">
+                        <div
+                            class="header-logo-image d-flex flex-column align-items-center justify-content-md-between pb-md-5">
+                            <img src="asset/image/sqb-companie.svg" class="mb-2 mb-md-0 header-rotate" alt="">
+                            <img src="asset/image/kafil-companie.svg" class="mb-2 mb-md-0 rotate" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 order-1 order-md-2">
+                        <div class="header-crop-image  d-flex flex-column align-items-center justify-content-center">
+                            <div class="image">
+                                <img src="asset/image/header-crop.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-12 order-3">
+                        <div
+                            class="header-logo-image d-flex flex-column align-items-ms-end align-items-center justify-content-md-between pb-md-5">
+                            <img src="asset/image/neo-companie.svg" class=" mb-2 mb-md-0 rotate" alt="">
+                            <img src="asset/image/kapital-companie.svg" class="header-rotate" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="container-lg container-fluid">
+                <div class="row about-row gy-4 justify-content-center">
+                    <div class="col-xl-6 col-md-10 col-12">
+                        <div class="about-me d-grid d-sm-flex align-items-center justify-content-between">
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold">Кто мы</h3>
+                                <p class="about-description fw-normal">Мы — объединение четырёх страховых компаний,
+                                    создавших совместный пул для покрытия крупных и сложных рисков</p>
+                            </div>
+                            <div class="about-image mb-3 mb-sm-0">
+                                <img src="asset/image/about-me.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-10 col-12">
+                        <div class="about-me d-grid d-sm-flex align-items-center justify-content-between">
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold">Зачем объединились</h3>
+                                <p class="about-description fw-normal">Чтобы объединить опыт, ресурсы и капиталы для
+                                    эффективного обслуживания больших объектов и инфраструктурных проектов</p>
+                            </div>
+                            <div class="about-image mb-3 mb-sm-0">
+                                <img src="asset/image/about-link.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-10 col-12">
+                        <div class="about-me d-grid d-sm-flex about-leder align-items-center justify-content-between">
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold">Лидер пула</h3>
+                                <p class="about-description fw-normal">Лидером пула выступает страховая компания SQB
+                                    Insurance, обладающая рейтингом BB- по версии Fitch</p>
+                            </div>
+                            <div class="about-image mb-3 mb-sm-0">
+                                <img src="asset/image/about-first.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="risks" id="risks">
+            <div class="container-lg container-fluid">
+                <div class="mb-4">
+                    <h1 class="header-title text-center fw-bold">Риски которые мы принимаем</h1>
+                </div>
+
+                <div class="row risks-row gy-5">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="risks-about d-flex flex-column ">
+                            <div class="risks-top mb-3">
+                                <img src="asset/image/risks.svg" alt="">
+                            </div>
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold mb-2">Property Risks</h3>
+                                <p class="about-description fw-normal">Коммерческая и промышленная недвижимость, склады,
+                                    торговые центры. Покрытие ущерба от пожаров, взрывов, стихийных бедствий</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="risks-about d-flex flex-column ">
+                            <div class="risks-top mb-2">
+                                <img src="asset/image/risks.svg" alt="">
+                            </div>
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold mb-3">Construction (CAR – Contractors All Risks)</h3>
+                                <p class="about-description fw-normal">Строительство жилья, коммерции и инфраструктуры
+                                    (мосты, дороги). Защита от ущерба и ответственности перед третьими лицами</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="risks-about d-flex flex-column ">
+                            <div class="risks-top mb-2">
+                                <img src="asset/image/risks.svg" alt="">
+                            </div>
+                            <div class="about-text">
+                                <h3 class="about-title fw-bold mb-3">Энергетика и Инжиниринг</h3>
+                                <p class="about-description fw-normal">Покрытие для ТЭЦ, ГЭС, солнечных и ветряных
+                                    станций. Аварии оборудования (Machinery Breakdown), монтажные риски (EAR),
+                                    электросети, трубопроводы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conpanie-about" id="conpanie-about">
+            <div class="container-lg container-fluid">
+                <div class="mb-4">
+                    <h1 class="header-title text-center fw-bold">Компании-участники пула</h1>
+                </div>
+
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-md-6 col-12">
+                        <div class="about-text d-flex flex-column justify-content-between align-items-stretch">
+                            <h3 class="about-title fw-bold mb-2">SQB insurance</h3>
+                            <p class="about-description fw-normal pb-2 pb-sm-0">Надёжный страховщик с широким опытом в
+                                корпоративных
+                                и имущественных рисках</p>
+                            <a href=""><button class="bg-transparent fw-normal border-0">Перейти на сайт</button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="about-text d-flex flex-column justify-content-between align-items-stretch">
+                            <h3 class="about-title fw-bold mb-2">Kafil sugurta</h3>
+                            <p class="about-description fw-normal pb-2 pb-sm-0">Фокус на индустриальных проектах и
+                                крупных инфраструктурных рисках</p>
+                            <a href=""><button class="bg-transparent fw-normal border-0">Перейти на сайт</button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="about-text d-flex flex-column justify-content-between align-items-stretch">
+                            <h3 class="about-title fw-bold mb-2">Neo Insurance</h3>
+                            <p class="about-description fw-normal pb-2 pb-sm-0">Современный подход и цифровые решения в
+                                страховании бизнеса</p>
+                            <a href=""><button class="bg-transparent fw-normal border-0">Перейти на сайт</button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="about-text d-flex flex-column justify-content-between align-items-stretch">
+                            <h3 class="about-title fw-bold mb-2">Kafil sugurta</h3>
+                            <p class="about-description fw-normal pb-2 pb-sm-0">Фокус на индустриальных проектах и
+                                крупных инфраструктурных рисках</p>
+                            <a href=""><button class="bg-transparent fw-normal border-0">Перейти на сайт</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="companie-image mt-5 d-flex justify-content-center">
+                    <div class="companie-logo-image ">
+                        <div class="swiper sample-slider">
+                            <div class="swiper-wrapper">
+                                <div class="companie-img swiper-slide">
+                                    <img src="asset/image/sqb-companie.svg" alt="">
+                                </div>
+                                <div class="companie-img compani-rotate swiper-slide">
+                                    <img src="asset/image/neo-companie.svg" alt="">
+                                </div>
+                                <div class="companie-img compani-rotate swiper-slide">
+                                    <img src="asset/image/kafil-companie.svg" alt="">
+                                </div>
+                                <div class="companie-img swiper-slide">
+                                    <img src="asset/image/kapital-companie.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees">
+            <div class="container-lg container-fluid">
+                <div class="mb-4">
+                    <h1 class="header-title text-center fw-bold">Компании-участники пула</h1>
+                </div>
+
+                <div class="employees-blog d-md-flex align-items-center justify-content-between">
+                    <div class="employees-img col-lg-2 col-md-3 col-12 mb-4 mb-md-0">
+                        <img src="asset/image/employees-img.png" alt="">
+                    </div>
+                    <div class="employees-text ms-md-3 ">
+                        <h3 class="about-title fw-bold">Гришин Георгий Владимирович</h3>
+                        <p class="about-description fw-normal">Эксперт в области страхования с многолетним опытом в
+                            управлении крупными рисками. Инициатор создания пула для объединения ресурсов ведущих
+                            страховых компаний и повышения эффективности страхового покрытия в сложных отраслях</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
