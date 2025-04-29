@@ -34,6 +34,19 @@ function myFunction() {
     }
 }
 
+const links = document.querySelectorAll(
+    'a[href^="#"]'
+)
+links.forEach(link=>{
+    link.onclick = (e) => {
+        e.preventDefault()
+        const target = document.querySelector(link.getAttribute('href'))
+        scroll({ top: target.offsetTop - 80,})
+        console.log(target.offsetTop)
+        console.log(target)
+    }
+})
+
 
 const swiper1 = new Swiper(".sample-slider", {
 

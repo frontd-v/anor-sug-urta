@@ -29,8 +29,9 @@ img {
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
+    left: 0;
     width: 100%;
     height: 5rem;
     background: white;
@@ -148,7 +149,10 @@ img {
 }
 
 /* About */
-.about{
+.about,
+.risks,
+.conpanie-about{
+    /* padding-top: 80px; */
     margin-bottom: 100px;
 }
 
@@ -186,9 +190,6 @@ img {
 }
 
 /* Risks */
-.risks{
-    margin-bottom: 100px;
-}
 
 .risks-about{
     width: 100%;
@@ -204,10 +205,6 @@ img {
 }
 
 /* Companie-about */
-.conpanie-about{
-    margin-bottom: 100px;
-}
-
 .conpanie-about .about-text{
     width: 100%;
     height: 176px;
@@ -325,6 +322,7 @@ img {
     .navbar-nav.open{
         left: 0;
     }
+
 
     .header-logo-image {
         height: auto;
